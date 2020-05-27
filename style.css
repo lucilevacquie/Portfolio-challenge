@@ -1,0 +1,92 @@
+body{
+  background-color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#nav-bar{
+  position: fixed;
+  top: 0;
+  background-color: thistle;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.nav-link{
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem 3rem;
+  color: black;
+}
+#welcome-section{
+  position: relative;
+  overflow: hidden;
+  margin-top: 6rem;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+#welcome-section h1 p{
+  position: relative;
+  z-index: 2;
+}
+#welcome-section img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+h1{
+  font-size: 3rem;
+}
+header{
+  color: aliceblue;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+#projects, my-projects{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.column{
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color:thistle;
+}
+#projects:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+.project-tile{
+  padding: 10px;
+  width: 100%;
+  border: solid;
+  text-align: center;
+}
+.img-project{
+  width: 300px;
+  height: 250px;
+}
+@media screen and (min-width:768px){
+  #welcome-section{
+    min-height: 600px;
+    margin-top: 3.5rem;
+  }
+}
+@media screen and (max-width:768px){
+  .column{
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-link{
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+}

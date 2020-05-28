@@ -4,16 +4,18 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <nav id="nav-bar">
+    <nav id="navbar">
       <a class="nav-link" href="#welcome-section">Presentation</a>
       <a class="nav-link" href="#projects">My freeCodeCamp projects</a>
       <a class="nav-link" href="#my-projects">My personal projects</a>
       <a class="nav-link" href="#contact-section">Contact</a>
     </nav>
     <div id="welcome-section">
-      <h1>Bonjour !</h1>
-      <h2>My name is Lucile and I'm a Web Developer apprentice</h2>
-      <p>I am currently learning programmation with freeCodeCamp. Confortable using HTML5 and CSS.<br>Here is a overview of my first projects</p>
+      <div class="vertical">
+        <h1>Bonjour !</h1>
+        <h2>My name is Lucile and I'm a Web Developer apprentice</h2>
+        <p>I am currently learning programmation with freeCodeCamp. Confortable using HTML5 and CSS.<br>Here is a overview of my first projects</p>
+      </div>
       <img src="./assets/welcome-backgroung.jpg">
     </div>
     <div id="projects">
@@ -22,17 +24,17 @@
         <div class="project-tile">
           <img class="img-project" src="./assets/cheese-project.png" alt="survey-form">
           <h3>Survey Form</h3>
-          <p>Lorem ipsum</p>
+          <p>Click <a class="github-link" href="https://github.com/lucilevacquie/Survey-form-challenge" target="_blank">here</a> to access to GitHub</p>
         </div>
         <div class="project-tile">
           <img class="img-project" src="./assets/tesla-project.png" alt="product-landing-page">
           <h3>Product Landing Page</h3>
-          <p>Lorem ipsum</p>
+          <p>Click <a class="github-link" href="https://github.com/lucilevacquie/Product-landing-page-challenge" target="_blank">here</a> to access to GitHub</p>
         </div>
         <div class="project-tile">
           <img class="img-project" src="./assets/coffee-challenge.png" alt="technical-doc-page">
           <h3>Technical Documentation Page</h3>
-          <p>Lorem ipsum</p>
+          <p>Click <a class="github-link" href="https://github.com/lucilevacquie/Technical-documentation-page-challenge" target="_blank">here</a> to access to GitHub</p>
         </div>
       </div>
     </div>
@@ -40,20 +42,24 @@
       <header>My personal projects</header>
       <div class="column">
         <div class="project-tile">
-          <img class="img-project" src="./assets/website1.png" alt="survey-form">
+          <img class="img-website" src="./assets/website1.png" alt="survey-form">
           <h3>Website 1</h3>
-          <p>Lorem ipsum</p>
+          <p>Click <a class="github-link" href="https://github.com/lucilevacquie/Website" target="_blank">here</a> to access to GitHub</p>
         </div>
         <div class="project-tile">
-          <img class="img-project" src="./assets/website2.png" alt="product-landing-page">
+          <img class="img-website" src="./assets/website2.png" alt="product-landing-page">
           <h3>Website 2</h3>
-          <p>Lorem ipsum</p>
+          <p>Click <a class="github-link" href="https://github.com/lucilevacquie/Website-2" target="_blank">here</a> to access to GitHub</p>
         </div>
       </div>
     </div>
     <div id="contact-section">
       <header>Contact</header>
-      <a id="profile-link" href="">My GitHub</a>
+      <p id="contact-text">You can contact me by email at
+      <a id="email-link" href="mailto:lucile.vacquie@gmail.com">lucile.vacquie@gmail.com</a><br>
+      and visit <a id="contact-link" href="https://www.linkedin.com/in/lucile-vacqui%C3%A929/" target="_blank">my Linkedin page</a>
+      to know more about my career.</p>
+      <a id="profile-link" href="https://github.com/lucilevacquie" target="_blank">Link to my GitHub</a>
     </div>
   </body>
 </html>

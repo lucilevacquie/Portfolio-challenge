@@ -1,8 +1,12 @@
+html{
+  height: 100%;
+}
 body{
+  height: 100%;
   background-color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#nav-bar{
+#navbar{
   position: fixed;
   top: 0;
   background-color: thistle;
@@ -18,18 +22,24 @@ body{
   color: black;
 }
 #welcome-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   overflow: hidden;
   margin-top: 6rem;
   height: 100%;
   width: 100%;
   text-align: center;
-  align-items: center;
   color: white;
+}
+.vertical{
+  margin: auto;
+  padding: 2rem 0;
 }
 #welcome-section h1 p{
   position: relative;
-  z-index: 2;
+  z-index: 0;
 }
 #welcome-section img{
   position: absolute;
@@ -38,26 +48,37 @@ body{
   width: 100%;
   height: auto;
   opacity: 0.6;
+  z-index: -1;
 }
 h1{
   font-size: 3rem;
 }
 header{
   color: aliceblue;
-  font-size: 2rem;
-  padding-top: 1rem;
+  font-size: 3rem;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
 }
-#projects, my-projects{
-  width: 100%;
+#projects{
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: black;
+}
+#my-projects{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background-color: black;
 }
 .column{
   float: left;
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color:thistle;
+  justify-content: space-around;
+  align-items: center;
 }
 #projects:after{
   content:"";
@@ -67,12 +88,27 @@ header{
 .project-tile{
   padding: 10px;
   width: 100%;
+  max-width: 365px;
   border: solid;
   text-align: center;
+  background-color: thistle;
 }
 .img-project{
   width: 300px;
   height: 250px;
+}
+.img-website{
+  width: 350px;
+  height: 250px;
+}
+#contact-text{
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 3rem;
+}
+#contact-link, #email-link{
+  text-decoration: none;
+  color: thistle;
 }
 @media screen and (min-width:768px){
   #welcome-section{
@@ -88,5 +124,8 @@ header{
   .nav-link{
     font-size: 1rem;
     padding: 0.5rem 2rem;
+  }
+  .welcome-section h1{
+    margin-top: 2rem;
   }
 }
